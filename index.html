@@ -9,10 +9,15 @@
         darkMode : 'class',
         theme: {
           extend: {
-
+            
             colors: {
               clifford: "#da373d",
+
             },
+            transitionDuration: {
+        '0': '0ms',
+        '2000': '2000ms',
+      }
           },
         },
       };
@@ -61,14 +66,20 @@
         <span class="text-sm text-slate-500 mr-2">Light</span>
         <input type="checkbox" name="toggle" id="toggle" class="invisible">
         <label for="toggle">
-            <div class="cursor-pointer bg-slate-100 w-9 h-5 p-1 rounded-full flex items-center">
-                <div class="bg-slate-500 h-4 w-4 rounded-full toggle-circle"></div>
+            <div class="cursor-pointer bg-slate-800  dark:bg-slate-100 w-9 h-5 p-1 rounded-full flex items-center">
+                <div class=" transition duration-150    h-4 w-4 rounded-full toggle-circle">
+                  
+                  <div class=" transition duration-150   bg-slate-100 dark:bg-slate-800 h-4 w-4 rounded-full animate-pulse ">
+
+                  </div>
+                </div>
+                
             </div>
         </label>
         <span class="text-sm  text-slate-500 ml-2">dark</span>
          
     </div>
-    <div class="max-w-lg border p-5 m-auto rounded-2xl hover:bg-sky-400 group shadow-md">
+    <div class="max-w-lg border p-5 m-auto rounded-2xl hover:bg-sky-400 group shadow-md transition">
       <h5 class="group-hover:text-white text-2xl font-semibold my-6">Sebuah rekomendasi</h5>
       <p class="group-hover:text-slate-200 first-letter:text-5xl first-letter:mr-2 text-slate-500">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et consectetur maxime officia officiis molestiae est repellat, atque accusantium
@@ -98,6 +109,14 @@
       >
         Learn More
       </button>
+    </div>
+    <div class="w-16 h-16 mx-auto rounded-full group flex" >
+  
+      <div class="w-16 h-16 origin-top-right bg-blue-700  mx-auto rounded-full group-hover:translate-x-28 transition duration-1000 " >    </div>
+      <div class="w-16 h-16 origin-top-right bg-orange-700 mx-auto rounded-full group-hover:translate-x-[120px] transition duration-2000 " >    </div>
+      
+      <div class="w-16 h-16  origin-top-left bg-blue-700 mx-auto group-hover:-translate-x-[120px]  rounded-full transition duration-linear-2000 "></div>
+      <div class="w-16 h-16  origin-top-left bg-orange-700 mx-auto group-hover:-translate-x-28  rounded-full transition duration-1000 "></div>
     </div>
     <div class="mb-96"></div>
     <script>
