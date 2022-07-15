@@ -1,0 +1,113 @@
+<html lang="en"S>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode : 'class',
+        theme: {
+          extend: {
+
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        #toggle:checked ~ label div.toggle-circle{
+            @apply translate-x-3;
+        }
+    </style>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-white">
+    <section class="m-10">
+      <div class="border p-10 rounded-md">
+        <h1 class="text-7xl mb-10 font-bold">Judul Post</h1>
+        <p class="mb-11 font-thin">Created by <span class="font-bold">Kevin Alfito</span> at 20 April 2022</p>
+        <p class="mb-9">
+          Lorem ipsum dolor sit amet <a href="" class="text-cyan-500 font-bold">consectetur</a> consectetur, adipisicing elit. Quo error vel,
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, modi totam, voluptatem ab, qui praesentium ad laudantium porro alias
+          consectetur itaque facilis fugiat voluptate explicabo doloremque? Quibusdam nostrum veritatis repellat.
+        </blockquote>
+        <p class="mb-[10px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor quae voluptas unde quas amet quisquam incidunt aliquam tempore
+          deleniti?
+        </p>
+        <div
+          class="bg-gray-300 flex mx-auto max-w-xl h-96 rounded-2xl bg-cover"
+          style="background-image: url('https://source.unsplash.com/1000x600?code')"
+        >
+          <div class="w-[150px] h-[150px] bg-white/30 m-auto rounded-xl backdrop-blur-sm text-white text-center">The Power of Code</div>
+        </div>
+
+        <div class="rounded-2xl shadow-xl m-20 p-10">
+          <h1 class="font-bold text-center text-2xl">Recomended Post</h1>
+          <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem.</li>
+          </ul>
+        </div>
+        <div class="flex overflow-hidden bg-gray-300 mx-auto max-w-xl h-96 rounded-2xl bg-cover" style="background-image: url('./1.jpg')"></div>
+      </div>
+    </section>
+    <hr class="my-20" />
+    <div class="flex justify-center my-20">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" name="toggle" id="toggle" class="invisible">
+        <label for="toggle">
+            <div class="cursor-pointer bg-slate-100 w-9 h-5 p-1 rounded-full flex items-center">
+                <div class="bg-slate-500 h-4 w-4 rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm  text-slate-500 ml-2">dark</span>
+         
+    </div>
+    <div class="max-w-lg border p-5 m-auto rounded-2xl hover:bg-sky-400 group shadow-md">
+      <h5 class="group-hover:text-white text-2xl font-semibold my-6">Sebuah rekomendasi</h5>
+      <p class="group-hover:text-slate-200 first-letter:text-5xl first-letter:mr-2 text-slate-500">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et consectetur maxime officia officiis molestiae est repellat, atque accusantium
+        impedit repellendus dolorem nesciunt sapiente qui aliquam commodi quisquam, sint illum. Iste ut cupiditate facilis amet libero debitis nam
+        necessitatibus, placeat adipisci?
+      </p>
+      <hr class="m-5" />
+      <button
+        class="group-hover:shadow-md block px-6 py-4 bg-sky-500 m-auto rounded-xl text-white font-semibold hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-400"
+      >
+        Learn More
+      </button>
+    </div>
+    <div class="max-w-lg dark:bg-slate-900 border p-5 m-auto rounded-2xl shadow-md my-4 dark:border-slate-300">
+      <form action="">
+        <label class="font-semibold block mb-1 text-slate-700" for="email">Email</label>
+        <input
+          name="email"
+          type="email"
+          placeholder="masukan Email"
+          class="peer px-3 py-2 border shadow rounded-xl w-full focus:outline-none focus:ring-1 focus:ring-sky-500 invalid:focus:ring-red-500"
+        />
+        <p class="m-1 peer-invalid:visible text-sm text-red-400 invisible">Email tidak valid</p>
+      </form>
+      <button
+        class="group-hover:shadow-md block px-6 py-4 bg-sky-500 m-auto rounded-xl text-white font-semibold hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-400"
+      >
+        Learn More
+      </button>
+    </div>
+    <div class="mb-96"></div>
+    <script>
+        const checkbox = document.querySelector('#toggle')
+        const html = document.querySelector('html')
+        
+        checkbox.addEventListener('click',()=>{
+            checkbox.checked ? html.classList.add('dark'):html.classList.remove('dark');
+        })
+
+    </script>
+  </body>
+</html>
