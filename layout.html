@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- container -->
@@ -21,14 +21,54 @@
             </p>
         </div>
     </div>
-    <div class="container rounded-lg border-2 px-5 columns-3 py-10 mx-auto mt-20">   
-        <img src="https://source.unsplash.com/600x600"class="mb-4">
-        <img src="https://source.unsplash.com/200x400"class="mb-4">
-        <img src="https://source.unsplash.com/600x400"class="mb-4">
-        <img src="https://source.unsplash.com/600x500"class="mb-4">
-        <img src="https://source.unsplash.com/200x400"class="mb-4">
+    <div class="container rounded-lg border-2 px-5 columns-1 sm:columns-3 py-10 mx-auto mt-20 flex-col items-center ">   
+        <!-- <img src="https://source.unsplash.com/600x600"class="mb-4 rounded-xl">
+        <img src="https://source.unsplash.com/300x400"class="mb-4 rounded-xl">
+        <img src="https://source.unsplash.com/600x400"class="mb-4 rounded-xl">
+        <img src="https://source.unsplash.com/600x500"class="mb-4 rounded-xl">
+        <img src="https://source.unsplash.com/300x400"class="mb-4 rounded-xl"> -->
     </div>
-  
+    <div class="container my-20 p-6 max-w-md mx-auto border-2 rounded-2xl shadow-xl sm:border-0 sm:shadow-inherit" >
+        <h1 class="text-4xl font-extrabold uppercase text-slate-800">Article</h1>
+        <div class="bg-slate-700 bg-cover group hover:scale-110 duration-200 max-w-xl h-60 rounded-xl overflow-hidden" style="background-image: url('1.jpg');">
+            <div class="max-w-xl h-60 group-hover:bg-slate-500/50 duration-300 text-white invisible group-hover:visible text-center "> Coding </div>
+        </div>
+        <h2 class="text-xl font-semibold text-slate-800">Mari belajar bersama bapakmu</h2>
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil, officia eum eligendi nesciunt, corporis id voluptatum laborum libero, rerum provident sit? Officiis distinctio delectus, ex quaerat voluptatum optio adipisci!</p>
+        <button class="py-3 px-5 bg-sky-500 text-xs text-white font-semibold mt-6 rounded-lg">Learn More</button>
+    </div>
+    <!-- gallery -->
+    <article>
+    <h2 class="text-3xl font-bold text-center text-slate-700 mt-24 mb-10"> My Gallery</h2>
+    <!-- container -->
+    <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-2 justify-center">
+        <!-- gallery 1 -->
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https:source.unsplash.com/600x400" alt="" srcset="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800">Image title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nesciunt tempora temporibus cumque, reprehenderit excepturi corporis? Culpa at impedit, quo quod doloremque cupiditate quibusdam et soluta aliquid animi ducimus quaerat.</p>
+            </div>
+        </div>
+        <!-- Gallery 2 -->
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-75">
+            <img src="https:source.unsplash.com/600x400" alt="" srcset="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800">Image title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nesciunt tempora temporibus cumque, reprehenderit excepturi corporis? Culpa at impedit, quo quod doloremque cupiditate quibusdam et soluta aliquid animi ducimus quaerat.</p>
+            </div>
+        </div>
+        <!-- Gallery 3 -->
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-75">
+            <img src="https:source.unsplash.com/600x400" alt="" srcset="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800">Image title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nesciunt tempora temporibus cumque, reprehenderit excepturi corporis? Culpa at impedit, quo quod doloremque cupiditate quibusdam et soluta aliquid animi ducimus quaerat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- tutup container -->
+</article>
     <div class="mb-96"></div>
 </body>
 </html>

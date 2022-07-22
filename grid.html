@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- gallery -->
+        <div class=" p-2 grid grid-cols-2 gap-2 md:gap-4 md:p-4 md:grid-cols-4 ">
+            <h2 class="font-bold text-3xl text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center"> My Gallery</span></h2>
+            <div class="font-semibold text-slate-500 md:col-start-2 md:row-start-2 md:flex" ><span class="self-end"> @kevintekno</span></div>
+            <div class="image group"> <div class="bg-[url('/img/1.jpg')] image-inner"></div></div>
+            <div class="image group md:col-start-3"> <div class="image-inner bg-[url('/img/2.jpg')] "></div></div>
+            <div class="image group"> <div class="image-inner bg-[url('/img/2.jpg')] "></div></div>
+            <div class="image group"> <div class="image-inner bg-[url('/img/3.jpg')] "></div></div>
+            <div class="image group "> <div class="image-inner bg-[url('/img/4.jpg')] "></div></div>
+            <div class="image group md:col-start-2"> <div class="image-inner bg-[url('/img/5.jpg')] "></div></div>
+            <div class="image group md:col-start-4"> <div class="image-inner bg-[url('/img/6.jpg')] "></div></div>
+            <div class="image group"> <div class="image-inner bg-[url('/img/7.jpg')] "></div></div>
+            <div class="image group md:col-start-3"> <div class="image-inner bg-[url('/img/8.jpg')] "></div></div>
+            <div class="image group md:col-start-3"> <div class="image-inner bg-[url('/img/9.jpg')] "></div></div>
+        </div>
+        <!-- tutup gallery -->
+    </div>
+    <!-- tutup container -->
+    <h1>Halo Kevin Ganteng</h1>
+    <ul class="[&>*]:bg-pink-100 [&>*]:text-pink-500 [&>*]:font-semibold [&>li:nth-child(3)]:bg-cyan-100 [&>li:nth-child(3)]:text-cyan-500  " >
+        <li class="py-3 px-6 mb-2 text-base text-center">
+            Text 1
+        </li>
+        <li class="py-3 px-6 mb-2 text-base text-center">
+            Text 1
+        </li>
+        <li class="py-3 px-6 mb-2 text-base text-center">
+            Text 1
+        </li>
+        <li class="py-3 px-6 mb-2 text-base text-center">
+            Text 1
+        </li>
+    </ul>
+    <hr class="mb-96">
+</body>
+</html>

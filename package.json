@@ -1,0 +1,23 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinalfito69/Belajar-Tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinalfito69/Belajar-Tailwind/issues"
+  },
+  "homepage": "https://github.com/kevinalfito69/Belajar-Tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* mengganti style dasar element */
+@layer base{
+    h1{
+        @apply text-6xl;
+        @apply font-bold;
+        @apply text-slate-700;
+    }
+}
+/* mengganti atau menambahkan style dari utiliti tailwind  */
+@layer components{
+    .image{
+        @apply aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden xl:aspect-[4/3] relative hover:scale-95 transition-all duration-500
+    }
+    .image-inner{
+        @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500
+    }
+}
+
+@layer utilities{
+    #toggle:checked ~ label div.toggle-circle{
+            @apply translate-x-3;
+    }
+}
